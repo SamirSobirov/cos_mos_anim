@@ -93,7 +93,7 @@
   
   .rocket {
     position: absolute;
-    bottom: 250px;
+    bottom: 200px;
     right: 100px;
     animation: slideInRocket 5s forwards;
     display: flex;
