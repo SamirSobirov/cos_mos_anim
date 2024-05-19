@@ -10,7 +10,7 @@ document.querySelector('.rocket_photo').addEventListener('click', function() {
         textBlock.classList.remove('visible');
     } else {
         rocketPhoto.style.width = '600px';
-        rocket.style.transform = 'translateX(800)'; // Перемещение вправо
+        rocket.style.transform = 'translateX(800)'; 
         textBlock.classList.add('visible');
     }
 });
