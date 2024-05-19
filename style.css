@@ -115,3 +115,30 @@
     }
   }
   
+
+
+  
+  @media (max-width: 1400px) {
+    .cosmos_title {
+      font-size: 28px;
+      bottom: 480px;
+      padding-left: 30%;
+    }
+  
+    .rocket {
+      bottom: 250px; 
+      right: 200px;
+      animation: slideInRocket 5s forwards; 
+    }
+  
+    .rocket_photo {
+      width: 200px;
+      height: 50px;
+    }
+  
+    .image-wrapper {
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  }
+  
