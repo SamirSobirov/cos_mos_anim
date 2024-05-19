@@ -98,38 +98,38 @@
     animation: slideInRocket 5s forwards;
     display: flex;
     align-items: center;
-    gap: 30px; /* Расстояние между изображением и текстом */
+    gap: 30px;
 }
 
 .rocket_photo {
-  transition: transform 0.5s ease, width 0.5s ease; /* Плавный переход */
-  cursor: pointer; /* Указатель курсора при наведении */
+  transition: transform 0.5s ease, width 0.5s ease; 
+  cursor: pointer; 
 }
 .text {
 
-  border: 2px solid #fff; /* Рамка вокруг текста */
-  border-radius: 8px; /* Закругленные углы рамки */
-  padding: 10px; /* Внутренние отступы для текста */
-  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для контраста */
-  opacity: 0; /* Прозрачность текста и рамки по умолчанию */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Плавное появление текста и рамки */
-  position: absolute; /* Абсолютное позиционирование */
-  bottom: 20px; /* Положение текста относительно контейнера */
+  border: 2px solid #fff;
+  border-radius: 8px; 
+  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0; 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+  position: absolute; 
+    bottom: 20px; 
   /* left: 50%; */
-  transform: translateX(-50%) scale(0); /* Изначально скрыто и уменьшено */
+  transform: translateX(-50%) scale(0); 
 }
 
 .text.visible {
-  opacity: 1; /* Видимость текста и рамки */
-  transform: translateX(-50%) scale(1); /* Масштаб до нормального размера */
+  opacity: 1; 
+  transform: translateX(-50%) scale(1); 
 }
 
 
 .rocket_text {
  padding: 5px 5px;
-    font-size: 18px; /* Размер шрифта */
-    color: #fff; /* Цвет текста */
-    opacity: 1; /* Прозрачность текста по умолчанию */
+    font-size: 18px; 
+    color: #fff; 
+    opacity: 1; 
 }
 
 
