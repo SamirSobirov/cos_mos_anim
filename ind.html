@@ -13,11 +13,46 @@
     <div class="image-wrapper">
       <img src="./images/bg_cosmos_img.jpg" alt="Centered Image">
       <p class="cosmos_title">ОСВОЕНИЕ ИСТОРИИ КОСМОСА</p>
+
+
       <div class="rocket">
+        <div class="text">
+        <p class="rocket_text">Восток 1 - космический аппарат,
+          <br> на котором Ю.А. Гагарин совершил полёт</p>
+    </div>
         <img class="rocket_photo" src="./images/rocket_img.png" alt="rocket img">
-      </div>
+
+  </div>
     </div>
   </div>
 </body>
+<!-- 
+<script>
+document.querySelector('.rocket').addEventListener('click', function() {
+    const rocketPhoto = document.querySelector('.rocket_photo');
+    const rocketText = document.querySelector('.rocket_text');
+    
+    rocketPhoto.style.width = '500px';
+    rocketText.classList.add('visible');
+});
+</script> -->
+
+
+<script>
+  document.querySelector('.rocket').addEventListener('click', function() {
+      const rocketPhoto = document.querySelector('.rocket_photo');
+      const rocketText = document.querySelector('.rocket_text');
+      
+      if (rocketText.classList.contains('visible')) {
+          rocketPhoto.style.width = '400px';
+          rocketText.classList.remove('visible');
+      } else {
+          rocketPhoto.style.width = '500px';
+          rocketText.classList.add('visible');
+      }
+  });
+</script>
+  
+<script src="./script.js"></script>
 
 </html>

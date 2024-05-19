@@ -91,33 +91,64 @@
     }
   }
   
-  @media (max-width: 1000px) {
-    .cosmos_title {
-      font-size: 28px;
-      bottom: 280px;
-      padding-left: 20%;
-    }
   
-    .rocket {
-      bottom: 150px; 
-      right: -100px;
-      animation: slideInRocket 5s forwards; 
-    }
-  
-    .rocket_photo {
-      width: 200px;
-      height: 50px;
-    }
-  
-    .image-wrapper {
-      padding: 20px;
-      box-sizing: border-box;
-    }
+.rocket {
+    bottom: 250px; 
+    right: 100px;
+    animation: slideInRocket 5s forwards; 
+  display: flex;
+    align-items: center;
+    gap: 30px; /* Расстояние между изображением и текстом */
+}
+
+.rocket_photo {
+    transition: transform 0.5s ease, width 0.5s ease; 
+    cursor: pointer; 
+}
+
+.text {
+  padding-right: 200px;
+}
+
+.rocket_text {
+    font-size: 18px; 
+    color: #fff; 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    position: absolute; 
+}
+
+.rocket_text.visible {
+    opacity: 1; 
+}
+
+
+@media (max-width: 1000px) {
+  .cosmos_title {
+    font-size: 28px;
+    bottom: 280px;
+    padding-left: 20%;
   }
-  
+
+  .rocket {
+    bottom: 150px; 
+    right: -100px;
+    animation: slideInRocket 5s forwards; 
+  }
+
+  .rocket_photo {
+    width: 200px;
+    height: 50px;
+  }
+
+  .image-wrapper {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
 
 
-  
+/* //1400px  */
   @media (max-width: 1400px) {
     .cosmos_title {
       font-size: 28px;
@@ -126,14 +157,14 @@
     }
   
     .rocket {
-      bottom: 250px; 
-      right: 200px;
+      bottom: 100px; 
+      right: -150px;
       animation: slideInRocket 5s forwards; 
     }
   
     .rocket_photo {
-      width: 200px;
-      height: 50px;
+      width: 300px;
+      height: 300px;
     }
   
     .image-wrapper {
